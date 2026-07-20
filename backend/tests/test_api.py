@@ -130,6 +130,11 @@ def test_evaluation_rejects_unknown_fields() -> None:
 
 
 def test_legacy_client_secret_route_is_not_exposed() -> None:
+    assert all(
+        getattr(route, "path", None) != "/api/realtime/session"
+        for route in main_module.app.routes
+    )
+
     response = client.post(
         "/api/realtime/session",
         json={
@@ -139,7 +144,7 @@ def test_legacy_client_secret_route_is_not_exposed() -> None:
             "clientCapabilities": {"webRtc": True, "audioOutput": True},
         },
     )
-    assert response.status_code == 405
+    assert response.status_code in {404, 405}
     assert "clientSecret" not in response.text
 
 
