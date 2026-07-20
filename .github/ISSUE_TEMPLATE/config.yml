@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/jaypadhya1605/Avatar-GPT-Realtime-Solution-Accelerator/security/advisories/new
+    about: Report vulnerabilities privately. Never open a public security issue.
+  - name: Azure product support
+    url: https://azure.microsoft.com/support/options/
+    about: Use Azure Support for subscription, quota, regional availability, and service incidents.

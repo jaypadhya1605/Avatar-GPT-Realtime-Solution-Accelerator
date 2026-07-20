@@ -1,0 +1,57 @@
+name: Feature request
+description: Propose a focused improvement using synthetic examples.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep proposals generic and synthetic. Do not include customer names, patient data, credentials, private deployment details, or proprietary source material.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or operator problem should the accelerator solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe observable behavior and acceptance criteria, not only an implementation.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Primary surface
+      options:
+        - Training experience
+        - Voice Live integration
+        - Deterministic evaluation
+        - Synthetic grounding
+        - Security or privacy
+        - Operations or deployment
+        - Custom Photo Avatar Limited Access Preview
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: The request can be demonstrated with synthetic data.
+          required: true
+        - label: The GA-default experience can remain usable without Preview access.
+          required: true

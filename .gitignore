@@ -1,0 +1,32 @@
+# Azure Developer CLI environment state
+/.azure/*
+!/.azure/deployment-plan.md
+
+# Generated application packages
+/artifacts/
+
+# Python
+/.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node and Vite
+/frontend/node_modules/
+/frontend/dist/
+*.tsbuildinfo
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

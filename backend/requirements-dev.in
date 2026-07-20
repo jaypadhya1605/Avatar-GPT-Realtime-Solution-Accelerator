@@ -1,0 +1,6 @@
+-r requirements.txt
+httpx
+pip-tools
+pytest
+pytest-asyncio
+ruff

@@ -1,0 +1,17 @@
+name: avatar-gpt-realtime
+metadata:
+  template: avatar-gpt-realtime@1.0.0
+infra:
+  provider: bicep
+  path: infra
+services:
+  web:
+    project: ./artifacts/app
+    language: py
+    host: appservice
+hooks:
+  prepackage:
+    shell: pwsh
+    run: ./scripts/package.ps1 -SkipSmoke
+    continueOnError: false
+    interactive: false

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "collection": "Synthetic patient portraits",
+  "policy": {
+    "syntheticOnly": true,
+    "containsCustomerData": false,
+    "containsRealPeople": false,
+    "approvedForPublicDistribution": true
+  },
+  "assets": [
+    {
+      "scenarioId": "SCN-001",
+      "persona": "Persona 1",
+      "file": "synthetic-patient-01.png",
+      "mediaType": "image/png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1690262,
+      "sha256": "cb4396534771fc00f418aa1b353027193febf932c3680e223361b0f1b3849455",
+      "provenance": "AI-generated synthetic portrait created for this accelerator; no source photograph is included."
+    },
+    {
+      "scenarioId": "SCN-002",
+      "persona": "Persona 3",
+      "file": "synthetic-patient-02.png",
+      "mediaType": "image/png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1420320,
+      "sha256": "86ac542887a465dde12e647c4848f203e151b4b8d0ba761b6726fd0a8a579437",
+      "provenance": "AI-generated synthetic portrait created for this accelerator; no source photograph is included."
+    },
+    {
+      "scenarioId": "SCN-003",
+      "persona": "Persona 4",
+      "file": "synthetic-patient-03.png",
+      "mediaType": "image/png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1630310,
+      "sha256": "d7b2db8c23426c404bea32d2f5314de099061ef23c31f8ac8653e0f123fe1fc8",
+      "provenance": "AI-generated synthetic portrait created for this accelerator; no source photograph is included."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "datasetId": "avatar-gpt-realtime-synthetic-v1",
+  "description": "Synthetic communication moments for the Avatar GPT Realtime Solution Accelerator.",
+  "records": [
+    {
+      "id": "REF-SCN001-001",
+      "title": "Naming fear before explaining next steps",
+      "scenarioId": "SCN-001",
+      "moment": "The patient says she is scared about what happens next and whether she will suffer.",
+      "learnerApproach": "The learner first reflects the fear, validates the need for a clear answer, and asks which question feels most urgent.",
+      "personaReaction": "The patient remains sad but becomes more open because the fear was named before information was offered.",
+      "coachingInsight": "Reflect the specific concern before moving to explanation or process.",
+      "tags": ["fear", "sadness", "validation", "what happens next", "suffering"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN001-002",
+      "title": "Generic reassurance leaves the concern unanswered",
+      "scenarioId": "SCN-001",
+      "moment": "The patient asks whether she will be in pain and the learner responds only that the team will take good care of her.",
+      "learnerApproach": "The learner is polite but gives generic reassurance without acknowledging fear or answering the active concern.",
+      "personaReaction": "The patient stays guarded and asks again for a direct, plain-language answer.",
+      "coachingInsight": "Warmth does not replace responsiveness; acknowledge the emotion and address the question directly.",
+      "tags": ["generic reassurance", "pain", "responsiveness", "guarded", "direct answer"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN001-003",
+      "title": "Repairing prognosis and palliative jargon",
+      "scenarioId": "SCN-001",
+      "moment": "The learner uses prognosis and palliative pathway without explanation while the patient is processing difficult news.",
+      "learnerApproach": "The learner notices the confusion, apologizes for the clinical wording, explains one idea at a time, and checks what the patient heard.",
+      "personaReaction": "The patient asks a clearer follow-up question after the repair and understanding check.",
+      "coachingInsight": "Repair unexplained jargon immediately and pair plain language with an understanding check.",
+      "tags": ["prognosis", "palliative", "jargon", "plain language", "understanding check"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN002-001",
+      "title": "Notice withdrawal before offering reassurance",
+      "scenarioId": "SCN-002",
+      "moment": "The patient says there is little energy left for another difficult care conversation.",
+      "learnerApproach": "The learner notices the exhaustion, allows a pause, and asks what feels most important to discuss now.",
+      "personaReaction": "The patient remains subdued but becomes more willing to speak because the exhaustion was not minimized.",
+      "coachingInsight": "Name withdrawal and fatigue before asking the patient to process more information.",
+      "tags": ["withdrawal", "fatigue", "silence", "listening", "validation"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN002-002",
+      "title": "False reassurance closes the conversation",
+      "scenarioId": "SCN-002",
+      "moment": "The patient says everything feels hopeless and hears only that things will be fine.",
+      "learnerApproach": "The learner repairs the reassurance by acknowledging how hard this feels and distinguishing what is known from what remains uncertain.",
+      "personaReaction": "The patient stays serious but no longer has to argue for the weight of the situation to be recognized.",
+      "coachingInsight": "Do not promise a positive outcome; pair honesty about uncertainty with continued presence.",
+      "tags": ["false reassurance", "hopeless", "uncertainty", "honesty", "presence"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN002-003",
+      "title": "Offer a small choice without creating burden",
+      "scenarioId": "SCN-002",
+      "moment": "The patient feels overwhelmed by a long list of decisions and stops responding.",
+      "learnerApproach": "The learner slows down, offers one manageable choice about what to discuss first, and checks whether a pause would help.",
+      "personaReaction": "The patient remains tired but can answer the smaller question without feeling pushed.",
+      "coachingInsight": "Reduce cognitive burden by offering one bounded choice and permission to pause.",
+      "tags": ["overwhelmed", "choice", "pause", "cognitive burden", "shared decision-making"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN003-001",
+      "title": "Make it safe to ask again",
+      "scenarioId": "SCN-003",
+      "moment": "The patient admits she nodded even though she did not understand and feels embarrassed asking for another explanation.",
+      "learnerApproach": "The learner removes blame, thanks the patient for saying so, and restarts with one short plain-language idea.",
+      "personaReaction": "The patient becomes less guarded and is willing to identify the part that remains confusing.",
+      "coachingInsight": "Normalize clarification and make understanding a shared responsibility.",
+      "tags": ["embarrassed", "confused", "psychological safety", "start over", "plain language"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN003-002",
+      "title": "Explain one clinical term at a time",
+      "scenarioId": "SCN-003",
+      "moment": "The learner uses comorbidity, differential, and clinical pathway in one explanation.",
+      "learnerApproach": "The learner repairs by removing unnecessary terms, defining the one term that must remain, and pausing before the next idea.",
+      "personaReaction": "The patient can repeat the main point in her own words and asks a focused follow-up question.",
+      "coachingInsight": "Reduce cognitive load by explaining one necessary term at a time.",
+      "tags": ["comorbidity", "differential", "clinical pathway", "jargon", "cognitive load"],
+      "approvedForDemo": true
+    },
+    {
+      "id": "REF-SCN003-003",
+      "title": "Own the communication repair",
+      "scenarioId": "SCN-003",
+      "moment": "The patient says the previous explanation made her feel talked down to.",
+      "learnerApproach": "The learner acknowledges the impact without defending intent, apologizes briefly, and asks permission to try again more clearly.",
+      "personaReaction": "The patient moves from frustration toward cautious relief after the learner owns the repair.",
+      "coachingInsight": "Acknowledge impact before explaining intent; keep the apology short and make the next attempt concrete.",
+      "tags": ["repair", "impact", "apology", "frustration", "relief"],
+      "approvedForDemo": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar GPT Realtime Solution Accelerator architecture</title>
+  <desc id="desc">A browser connects through same-origin HTTPS and WebSocket to a FastAPI application on Azure App Service. App Service uses managed identity to connect to Azure Voice Live and Azure Monitor. Custom Photo Avatar is an optional Limited Access Preview.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1e1e1e"/>
+    </marker>
+    <marker id="previewArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#D13438"/>
+    </marker>
+    <style>
+      .title { font: 700 30px 'Segoe UI', sans-serif; fill: #111; }
+      .heading { font: 700 20px 'Segoe UI', sans-serif; fill: #111; }
+      .body { font: 16px 'Segoe UI', sans-serif; fill: #111; }
+      .small { font: 14px 'Segoe UI', sans-serif; fill: #111; }
+      .boundary { font: 16px 'Segoe UI', sans-serif; fill: #111; }
+    </style>
+  </defs>
+  <rect width="1120" height="760" fill="#fff"/>
+  <text x="40" y="50" class="title">Avatar GPT Realtime Solution Accelerator</text>
+
+  <rect x="40" y="130" width="230" height="180" rx="8" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+  <text x="155" y="165" text-anchor="middle" class="heading">React browser app</text>
+  <text x="155" y="202" text-anchor="middle" class="body">Microphone + AudioWorklet</text>
+  <text x="155" y="228" text-anchor="middle" class="body">Transcript and report</text>
+  <text x="155" y="254" text-anchor="middle" class="body">Local portrait + visemes</text>
+
+  <rect x="370" y="100" width="300" height="240" rx="8" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+  <text x="520" y="135" text-anchor="middle" class="heading">Linux App Service</text>
+  <text x="520" y="166" text-anchor="middle" class="body">FastAPI + static React</text>
+  <text x="520" y="201" text-anchor="middle" class="body">Same-origin WebSocket broker</text>
+  <text x="520" y="227" text-anchor="middle" class="body">Server-owned prompts and config</text>
+  <text x="520" y="253" text-anchor="middle" class="body">Session and network limits</text>
+  <text x="520" y="279" text-anchor="middle" class="body">Deterministic RAG + evaluator</text>
+  <text x="520" y="305" text-anchor="middle" class="body">System-assigned identity</text>
+
+  <rect x="770" y="100" width="280" height="240" rx="8" fill="#FFF4CE" stroke="#F7630C" stroke-width="2"/>
+  <text x="910" y="135" text-anchor="middle" class="heading">Foundry AI Services</text>
+  <text x="910" y="166" text-anchor="middle" class="body">Voice Live API 2026-04-10</text>
+  <text x="910" y="201" text-anchor="middle" class="body">gpt-realtime-1.5</text>
+  <text x="910" y="227" text-anchor="middle" class="body">Azure Speech transcription</text>
+  <text x="910" y="253" text-anchor="middle" class="body">Neural audio + visemes</text>
+  <text x="910" y="279" text-anchor="middle" class="body">Managed identity and RBAC</text>
+  <text x="910" y="305" text-anchor="middle" class="body">No model deployment</text>
+
+  <line x1="270" y1="220" x2="365" y2="220" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="318" y="185" text-anchor="middle" class="small">HTTPS + WSS</text>
+  <text x="318" y="204" text-anchor="middle" class="small">PCM16 / events</text>
+  <line x1="670" y1="220" x2="765" y2="220" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="718" y="185" text-anchor="middle" class="small">Entra token</text>
+  <text x="718" y="204" text-anchor="middle" class="small">server to service</text>
+
+  <rect x="370" y="440" width="300" height="140" rx="8" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+  <text x="520" y="475" text-anchor="middle" class="heading">Azure Monitor</text>
+  <text x="520" y="506" text-anchor="middle" class="body">Application Insights + Log Analytics</text>
+  <text x="520" y="532" text-anchor="middle" class="body">Entra-authenticated telemetry</text>
+  <text x="520" y="558" text-anchor="middle" class="body">No transcript or audio bodies</text>
+  <line x1="520" y1="340" x2="520" y2="435" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="770" y="440" width="280" height="140" rx="8" fill="#FDE7E9" stroke="#D13438" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="910" y="475" text-anchor="middle" class="heading">Limited Access Preview</text>
+  <text x="910" y="506" text-anchor="middle" class="body">Custom Photo Avatar / vasa-1</text>
+  <text x="910" y="532" text-anchor="middle" class="body">Receive-only H.264 WebRTC</text>
+  <text x="910" y="558" text-anchor="middle" class="body">Disabled by default</text>
+  <line x1="910" y1="340" x2="910" y2="435" stroke="#D13438" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#previewArrow)"/>
+
+  <rect x="40" y="640" width="1010" height="88" rx="6" fill="#F3F2F1" stroke="#605E5C"/>
+  <text x="62" y="674" class="boundary">Security boundary: Azure credentials, endpoint, model, prompt, voice, character selection, and service errors remain server-owned.</text>
+  <text x="62" y="702" class="boundary">The browser receives bounded metadata, transcripts, audio, visemes, and optional short-lived ICE configuration only.</text>
+</svg>

@@ -1,0 +1,85 @@
+name: Bug report
+description: Report a reproducible defect using synthetic data only.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include patient data, personal data, credentials, signed URLs, tenant character names, consent media, or private deployment identifiers. Report security issues through the private process in SECURITY.md.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I used only synthetic data and removed credentials and deployment-specific values.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
+
+  - type: dropdown
+    id: path
+    attributes:
+      label: Experience path
+      options:
+        - Local mock
+        - GA Voice Live with local portrait
+        - Custom Photo Avatar Limited Access Preview
+        - Deployment or infrastructure
+        - Tests or packaging
+        - Documentation
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Commit SHA or release tag.
+      placeholder: abc1234
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Python, and Node versions. Do not include tenant or resource names.
+      placeholder: Windows 11, Edge 130, Python 3.12, Node 22
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use a packaged scenario ID and synthetic wording only.
+      placeholder: |
+        1. Select SCN-001.
+        2. Choose medium difficulty.
+        3. Start the session.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitized diagnostics
+      description: Include only relevant error types and timestamps. Remove transcript, audio, SDP, ICE, character names, URLs, correlation IDs, and identifiers.
+      render: text
