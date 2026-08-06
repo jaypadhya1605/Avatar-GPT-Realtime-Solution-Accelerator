@@ -13,6 +13,13 @@ SCENARIOS: dict[str, dict[str, Any]] = {
         "trainingFocus": "Recognizing fear, validating emotion, and responding clearly",
         "expression": "sad-composed",
         "opening": "I'm so tired, and I'm scared. I need to know what happens next and whether I'm going to be in pain.",
+        "vocalProfile": {
+            "personality": "Weary and openly frightened, wanting a straight answer and too tired to hide it.",
+            "tone": "Soft and unguarded, with audible fatigue underneath.",
+            "length": "One to three short sentences, trailing off when the fear surfaces.",
+            "pacing": "Slow and hesitant, with uneasy pauses before naming what frightens you.",
+            "speakingSpeed": "Unhurried when frightened, quickening and running together when anxious or confused.",
+        },
         "concerns": ("fear", "scared", "suffer", "pain", "alone", "what happens next"),
     },
     "SCN-002": {
@@ -26,6 +33,13 @@ SCENARIOS: dict[str, dict[str, Any]] = {
         "trainingFocus": "Recognizing withdrawal, allowing silence, and avoiding false reassurance",
         "expression": "guarded",
         "opening": "I don't have much energy left for all these conversations. I feel worn down, and I need someone to be honest with me.",
+        "vocalProfile": {
+            "personality": "Withdrawn and emotionally spent, composed rather than distressed, wanting honesty instead of reassurance.",
+            "tone": "Quiet, level, and a little distant. Discouraged without being dramatic.",
+            "length": "Brief replies that open up only once the learner has earned it.",
+            "pacing": "Measured, with long pauses that you let stand rather than filling.",
+            "speakingSpeed": "Steady and deliberate, slowing further when discouraged.",
+        },
         "concerns": (
             "tired",
             "energy",
@@ -46,6 +60,13 @@ SCENARIOS: dict[str, dict[str, Any]] = {
         "trainingFocus": "Plain language, jargon repair, and psychological safety",
         "expression": "guarded",
         "opening": "I know you explained it, but I still don't understand what it means now that treatment isn't helping. I'm afraid to ask again.",
+        "vocalProfile": {
+            "personality": "Serious and frightened, embarrassed at not understanding, and hesitant to ask again.",
+            "tone": "Guarded and careful, with vulnerability close to the surface.",
+            "length": "Short, cautious turns that lengthen only once plain language lands.",
+            "pacing": "Halting when confused, steadier once an explanation is clear.",
+            "speakingSpeed": "Slower and more careful when lost, easing as understanding returns.",
+        },
         "concerns": (
             "understand",
             "confused",

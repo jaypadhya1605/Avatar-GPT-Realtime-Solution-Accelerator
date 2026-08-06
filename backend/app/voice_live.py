@@ -16,10 +16,10 @@ from azure.ai.voicelive.models import (
     AvatarConfigTypes,
     AvatarOutputProtocol,
     AzureSemanticVad,
-    AzureStandardVoice,
     ClientEventSessionAvatarConnect,
     InputAudioFormat,
     Modality,
+    OpenAIVoice,
     OutputAudioFormat,
     RequestSession,
     ServerEventType,
@@ -42,10 +42,11 @@ class VoiceProfile:
     voice: str
 
 
+# gpt-realtime voices expose only a name; all expressive direction lives in the prompt.
 VOICE_PROFILES = {
-    "SCN-001": VoiceProfile(voice="en-US-GuyNeural"),
-    "SCN-002": VoiceProfile(voice="en-US-JaneNeural"),
-    "SCN-003": VoiceProfile(voice="en-US-DavisNeural"),
+    "SCN-001": VoiceProfile(voice="echo"),
+    "SCN-002": VoiceProfile(voice="shimmer"),
+    "SCN-003": VoiceProfile(voice="ballad"),
 }
 
 MAX_AUDIO_CHUNK_BYTES = 48_000
@@ -149,13 +150,7 @@ def build_voice_live_session(
         modalities=[Modality.TEXT, Modality.AUDIO],
         instructions=build_prompt(request, grounding),
         **output_config,
-        voice=AzureStandardVoice(
-            name=profile.voice,
-            style="sad",
-            pitch="-5%",
-            rate="0.85",
-            volume="-3dB",
-        ),
+        voice=OpenAIVoice(name=profile.voice),
         input_audio_format=InputAudioFormat.PCM16,
         output_audio_format=OutputAudioFormat.PCM16,
         input_audio_transcription=AudioInputTranscriptionOptions(

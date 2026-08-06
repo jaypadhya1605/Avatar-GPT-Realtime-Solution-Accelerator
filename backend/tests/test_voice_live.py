@@ -9,6 +9,7 @@ from starlette.websockets import WebSocketDisconnect
 
 from app import main as main_module
 from app import voice_live as voice_live_module
+from app.scenarios import SCENARIOS
 from app.settings import Settings
 from app.voice_live import VOICE_PROFILES, VoiceLiveStart, build_voice_live_session
 
@@ -119,7 +120,7 @@ class FakeConnectionContext:
         self.closed = True
 
 
-def test_voice_live_session_uses_ga_audio_visemes_with_subdued_prosody() -> None:
+def test_voice_live_session_uses_ga_audio_visemes_with_realtime_voice() -> None:
     request = VoiceLiveStart(
         type="start_session",
         scenarioId="SCN-003",
@@ -133,13 +134,12 @@ def test_voice_live_session_uses_ga_audio_visemes_with_subdued_prosody() -> None
     assert "avatar" not in payload
     assert payload["animation"] == {"outputs": ["viseme_id"]}
     assert payload["voice"] == {
-        "type": "azure-standard",
+        "type": "openai",
         "name": VOICE_PROFILES["SCN-003"].voice,
-        "style": "sad",
-        "pitch": "-5%",
-        "rate": "0.85",
-        "volume": "-3dB",
     }
+    # gpt-realtime rejects prosody arguments, so the direction must reach the prompt instead.
+    assert "Vocal identity:" in payload["instructions"]
+    assert SCENARIOS["SCN-003"]["vocalProfile"]["pacing"] in payload["instructions"]
     assert payload["input_audio_transcription"] == {
         "model": "azure-speech",
         "language": "en-US",

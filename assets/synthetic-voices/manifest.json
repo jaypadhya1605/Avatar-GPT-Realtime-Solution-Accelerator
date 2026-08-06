@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "1.0",
+  "collection": "Synthetic patient voice samples",
+  "policy": {
+    "syntheticOnly": true,
+    "containsCustomerData": false,
+    "containsRealPeople": false,
+    "approvedForPublicDistribution": true
+  },
+  "source": "Azure AI Voice Live, gpt-realtime OpenAI voices",
+  "provenance": "Machine-generated speech rendered by gpt-realtime. No recorded human voice, no voice cloning, no PHI, no PII.",
+  "samples": [
+    {
+      "scenarioId": "SCN-001",
+      "persona": "Persona 1",
+      "portrait": "synthetic-patient-01.png",
+      "voice": "echo",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-1-echo/persona-1-01-opening-fear.wav",
+      "title": "Opening - exhausted and afraid",
+      "sampleSlug": "01-opening-fear",
+      "seconds": 11.1,
+      "scriptedText": "I'm so tired. And I'm scared. I need to know what happens next, and whether I'm going to be in pain. Nobody will just tell me straight.",
+      "renderedTranscript": "I'm so tired. And I'm scared. I need to know what happens next, and whether I'm going to be in pain. Nobody will just tell me straight.",
+      "direction": "This is the very first thing he says. Physically drained and openly frightened. Let a short, uneasy pause fall before the question about pain.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-001",
+      "persona": "Persona 1",
+      "portrait": "synthetic-patient-01.png",
+      "voice": "echo",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-1-echo/persona-1-02-night-fear-escalating.wav",
+      "title": "Fear escalating - the three a.m. worry",
+      "sampleSlug": "02-night-fear-escalating",
+      "seconds": 19.65,
+      "scriptedText": "I keep waking up at three in the morning thinking about it. My wife is asleep right next to me and I just lie there. I don't want to leave her with a mess. I don't want the kids to see me like that. Is it going to hurt? That's what I keep coming back to. Is it going to hurt?",
+      "renderedTranscript": "I keep waking up at three in the morning thinking about it. My wife is asleep right next to me and I just lie there. I don't want to leave her with a mess. I don't want the kids to see me like that. Is it going to hurt? That's what I keep coming back to. Is it going to hurt?",
+      "direction": "Anxiety building. Nervous energy pushes him to rush slightly in the middle, then he lands hard on the repeated question. Let the voice thin out on the mention of his children.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-001",
+      "persona": "Persona 1",
+      "portrait": "synthetic-patient-01.png",
+      "voice": "echo",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-1-echo/persona-1-03-jargon-confusion.wav",
+      "title": "Fragmented - unfamiliar words land as abandonment",
+      "sampleSlug": "03-jargon-confusion",
+      "seconds": 12.5,
+      "scriptedText": "You said there were options. But then you said something about palliative, something. I don't know what that means. Does that mean you're giving up on me? I need you to say it in words I can actually hold on to.",
+      "renderedTranscript": "You said there were options. But then you said something about palliative, something. I don't know what that means. Does that mean you're giving up on me? I need you to say it in words I can actually hold on to.",
+      "direction": "Fragmented and uncertain. He stumbles over the clinical term because he genuinely cannot hold on to it, then becomes more direct on the last sentence.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-001",
+      "persona": "Persona 1",
+      "portrait": "synthetic-patient-01.png",
+      "voice": "echo",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-1-echo/persona-1-04-settling-after-empathy.wav",
+      "title": "Settling - fear named, tension easing",
+      "sampleSlug": "04-settling-after-empathy",
+      "seconds": 29.4,
+      "scriptedText": "Thank you. That's the first time somebody's actually said it plainly. I think I've been so busy being terrified that I couldn't hear anything anyone told me. It helps to know you'll stay ahead of the pain. It helps to know I won't be on my own for it. I still don't like it. I'm not going to pretend I'm okay with any of this. But I think I can talk to my wife tonight. I think I can actually do that now.",
+      "renderedTranscript": "Thank you. That's the first time somebody's actually said it plainly. I think I've been so busy being terrified that I couldn't hear anything anyone told me. It helps to know you'll stay ahead of the pain. It helps to know I won't be on my own for it. I still don't like it. I'm not going to pretend I'm okay with any of this. But I think I can talk to my wife tonight. I think I can actually do that now.",
+      "direction": "The learner has named the fear and answered plainly. Anxiety drains out gradually. Still tired, still sad, but no longer bracing. Slower and steadier than the earlier takes.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-003",
+      "persona": "Persona 4",
+      "portrait": "synthetic-patient-03.png",
+      "voice": "ballad",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-4-ballad/persona-4-01-defensive-opening.wav",
+      "title": "Opening - clipped and on guard",
+      "sampleSlug": "01-defensive-opening",
+      "seconds": 13.75,
+      "scriptedText": "I know you explained it. I heard you. I still don't get it. And I'm not asking a third time just so you can look at me like that again, like I'm slow, like I'm wasting your afternoon. So don't. Just don't do that to me.",
+      "renderedTranscript": "I know you explained it. I heard you. I still don't get it. And I'm not asking a third time just so you can look at me like that again, like I'm slow, like I'm wasting your afternoon. So don't. Just don't do that to me.",
+      "direction": "Short, clipped, defensive. Fast delivery with a hard edge. He is embarrassed about not understanding and covering it with anger. Leave a hard beat of silence before the final two sentences.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-003",
+      "persona": "Persona 4",
+      "portrait": "synthetic-patient-03.png",
+      "voice": "ballad",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-4-ballad/persona-4-02-jargon-anger.wav",
+      "title": "Anger at the jargon",
+      "sampleSlug": "02-jargon-anger",
+      "seconds": 17.25,
+      "scriptedText": "See, there it is again. Disease progression. What does that actually mean? Just say it. You people talk in code and then act surprised when I'm angry. I'm thirty-four years old. I have a kid in second grade. So use words a normal person uses and tell me what is happening to me.",
+      "renderedTranscript": "See, there it is again. Disease progression. What does that actually mean? Just say it. You people talk in code and then act surprised when I'm angry. I'm thirty-four years old. I have a kid in second grade. So use words a normal person uses and tell me what is happening to me.",
+      "direction": "Sharp and rapid. Words come fast. Real frustration, pushing back hard. Clipped emphasis on the clinical phrase he is quoting back.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-003",
+      "persona": "Persona 4",
+      "portrait": "synthetic-patient-03.png",
+      "voice": "ballad",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-4-ballad/persona-4-03-anger-cracking-into-fear.wav",
+      "title": "Anger cracking - the fear underneath",
+      "sampleSlug": "03-anger-cracking-into-fear",
+      "seconds": 23.35,
+      "scriptedText": "Fine. You want the truth? I'm not angry at you. I'm angry because every single time somebody walks in here holding a folder, my life gets smaller. First it was, we'll try something else. Then it was, let's see how you respond. Now it's this. And I still have to go home and work out what to say to my son, and nobody has given me one straight sentence I can actually repeat to him.",
+      "renderedTranscript": "Fine. You want the truth? I'm not angry at you. I'm angry because every single time somebody walks in here holding a folder, my life gets smaller. First it was, we'll try something else. Then it was, let's see how you respond. Now it's this. And I still have to go home and work out what to say to my son, and nobody has given me one straight sentence I can actually repeat to him.",
+      "direction": "Starts fast and hot, then the edge starts to fail. By the last sentence the anger has thinned into fear and he is talking about his son rather than at the clinician. Do not soften the opening.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-003",
+      "persona": "Persona 4",
+      "portrait": "synthetic-patient-03.png",
+      "voice": "ballad",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-4-ballad/persona-4-04-plain-language-lands.wav",
+      "title": "Plain language lands - guard drops",
+      "sampleSlug": "04-plain-language-lands",
+      "seconds": 20.4,
+      "scriptedText": "Okay. Okay, that I understood. Nobody has said it like that before. So it isn't going to fix it. It's going to keep me comfortable and give me time. That I can work with. Look, I'm sorry for snapping at you earlier. I'm not usually, I don't know what I am right now, honestly.",
+      "renderedTranscript": "Okay. Okay, that I understood. Nobody has said it like that before. So it isn't going to fix it. It's going to keep me comfortable and give me time. That I can work with. Look, I'm sorry for snapping at you earlier. I'm not usually, I don't know what I am right now, honestly.",
+      "direction": "The learner has explained it in plain language. The sharpness drops away. Slower than every previous take. Genuine, awkward vulnerability. The apology is uncomfortable for him.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-002",
+      "persona": "Persona 3",
+      "portrait": "synthetic-patient-02.png",
+      "voice": "shimmer",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-3-shimmer/persona-3-01-opening-withdrawn.wav",
+      "title": "Opening - worn down, asking for honesty",
+      "sampleSlug": "01-opening-withdrawn",
+      "seconds": 13.75,
+      "scriptedText": "I don't have much energy left for all of these conversations. I've had four of them this week and they all sound the same. I'd rather you were just honest with me. I can handle honest.",
+      "renderedTranscript": "I don't have much energy left for all of these conversations. I've had four of them this week and they all sound the same. I'd rather you were just honest with me. I can handle honest.",
+      "direction": "Withdrawn and low-energy, but still articulate. Quieter than her natural register. She is not being rude; she is out of reserve.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-002",
+      "persona": "Persona 3",
+      "portrait": "synthetic-patient-02.png",
+      "voice": "shimmer",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-3-shimmer/persona-3-02-medical-student-awareness.wav",
+      "title": "Composed - she already understands the vocabulary",
+      "sampleSlug": "02-medical-student-awareness",
+      "seconds": 17.8,
+      "scriptedText": "The strange part is that I know the vocabulary. I was two years into medical school when this started, so I know what the numbers mean. I know what you're not saying when you pause before you answer. So please don't round the edges off for me. I'd rather have the real version than a kind one.",
+      "renderedTranscript": "The strange part is that I know the vocabulary. I was two years into medical school when this started, so I know what the numbers mean. I know what you're not saying when you pause before you answer. So please don't round the edges off for me. I'd rather have the real version than a kind one.",
+      "direction": "Measured and precise. A flicker of dry composure. She is making a reasoned case, not pleading. Slight tightening on the final sentence.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-002",
+      "persona": "Persona 3",
+      "portrait": "synthetic-patient-02.png",
+      "voice": "shimmer",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-3-shimmer/persona-3-03-hope-and-reality.wav",
+      "title": "Hope and reality held together",
+      "sampleSlug": "03-hope-and-reality",
+      "seconds": 28.35,
+      "scriptedText": "People keep telling me to stay positive, as though it's a job I'm failing at. I'm not being negative. I'm being accurate. I still want the good days. I want to finish the letters I've been writing, and I want to be at my sister's wedding in October if I can manage it. Both of those things can be true at once. I can want all of that and still know how this ends. I just need someone who can sit with both of them instead of picking one for me.",
+      "renderedTranscript": "People keep telling me to stay positive, as though it's a job I'm failing at. I'm not being negative. I'm being accurate. I still want the good days. I want to finish the letters I've been writing, and I want to be at my sister's wedding in October if I can manage it. Both of those things can be true at once. I can want all of that and still know how this ends. I just need someone who can sit with both of them instead of picking one for me.",
+      "direction": "The longest take. Thoughtful and well-structured, with genuine warmth when she names what she still wants, and audible sadness underneath. Steady pace throughout, with reflective pauses between the two halves of her argument.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    },
+    {
+      "scenarioId": "SCN-002",
+      "persona": "Persona 3",
+      "portrait": "synthetic-patient-02.png",
+      "voice": "shimmer",
+      "voiceFamily": "gpt-realtime (OpenAI voice)",
+      "model": "gpt-realtime-1.5",
+      "file": "persona-3-shimmer/persona-3-04-silence-honored.wav",
+      "title": "Opening up - silence was the right answer",
+      "sampleSlug": "04-silence-honored",
+      "seconds": 17.3,
+      "scriptedText": "Thank you for not telling me that everything happens for a reason. You just let it be quiet. That was better. I think I've been holding my breath, waiting for the next piece of encouragement I'd have to be gracious about. You didn't do that. I'd like to talk again tomorrow, if that's alright.",
+      "renderedTranscript": "Thank you for not telling me that everything happens for a reason. You just let it be quiet. That was better. I think I've been holding my breath, waiting for the next piece of encouragement I'd have to be gracious about. You didn't do that. I'd like to talk again tomorrow, if that's alright.",
+      "direction": "Softer and warmer. Relief rather than gratitude. The composure loosens slightly; a little vulnerability shows on the last line.",
+      "format": {
+        "container": "wav",
+        "encoding": "pcm_s16le",
+        "sampleRateHz": 24000,
+        "channels": 1
+      },
+      "synthetic": true
+    }
+  ]
+}

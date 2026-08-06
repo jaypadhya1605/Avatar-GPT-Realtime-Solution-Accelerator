@@ -15,7 +15,8 @@ A reproducible voice-first training application for practicing empathetic conver
 ## What it includes
 
 - Three synthetic end-of-life communication scenarios focused on fear and pain, emotional exhaustion, and plain-language repair.
-- Three distinct patient portraits and Azure neural voices, with easy, medium, and hard behavior.
+- Three matched synthetic patient portraits and voices, with easy, medium, and hard behavior. See [synthetic persona assets](assets/README.md).
+- Twelve reference voice clips so you can hear every persona before deploying anything.
 - Full-duplex 24 kHz PCM16 speech, Azure semantic VAD, deep noise suppression, server echo cancellation, and interruption.
 - GA-default viseme events that animate the correct local portrait without requiring avatar approval.
 - Scenario-isolated, hash-validated synthetic RAG with at most three packaged sources per turn.
@@ -30,7 +31,7 @@ A reproducible voice-first training application for practicing empathetic conver
 | Capability | Default status | Deployment dependency |
 | --- | --- | --- |
 | Voice Live `gpt-realtime-1.5` | GA path | Foundry `AIServices` account; no model deployment |
-| Azure Speech transcription and neural voices | GA path | Included through Voice Live |
+| Azure Speech transcription and `gpt-realtime` voices | GA path | Included through Voice Live |
 | Local portrait animation from visemes | GA path | Three packaged synthetic PNGs |
 | Custom Photo Avatar with `vasa-1` | **Limited Access Preview**, off | Approval, a Foundry project, and three tenant-owned characters |
 
@@ -96,6 +97,7 @@ The browser never receives or controls the Azure endpoint, model, prompt, voice,
 ## Documentation
 
 - [Architecture](docs/architecture.md): runtime flow, trust boundaries, resources, and scaling assumptions.
+- [Synthetic persona assets](assets/README.md): how the portraits and voices pair up, and the two voice families you can choose between.
 - [Deployment](docs/deployment.md): prerequisites, `azd up`, verification, updates, and cleanup.
 - [Custom Photo Avatar](docs/custom-photo-avatar.md): Limited Access, image and consent requirements, creation, mapping, validation, and rollback.
 - [Security and privacy](docs/security-and-privacy.md): data inventory, identity, browser controls, persistence, telemetry, and limitations.
@@ -106,8 +108,9 @@ The browser never receives or controls the Azure endpoint, model, prompt, voice,
 ## Repository layout
 
 ```text
+assets/        Synthetic persona reference: paired portrait and voice documentation, voice samples
 backend/       FastAPI APIs, Voice Live bridge, RAG, evaluator, tests, locked Python dependencies
-frontend/      React/TypeScript experience, AudioWorklet client, local avatar renderer, Vitest tests
+frontend/      React/TypeScript experience, AudioWorklet client, local avatar renderer, portrait PNGs, Vitest tests
 data/          Versioned synthetic conversation corpus
 infra/         Subscription- and resource-group-scope Bicep
 scripts/       Bootstrap, lock, test, package, preflight, privacy, mock, and Preview helpers
